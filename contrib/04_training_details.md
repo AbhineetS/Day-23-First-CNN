@@ -3,15 +3,15 @@
 ### ⚙️ Training Configuration
 - **Epochs:** 5  
 - **Batch size:** 64  
-- **Optimizer:** Adam (default LR)  
+- **Optimizer:** Adam  
 - **Loss:** Sparse Categorical Crossentropy  
 - **Validation split:** 10%
 
-### 📊 Observed Metrics
-- Training accuracy increased from **~45% → ~70%**
-- Validation accuracy peaked around **~68%**
-- Loss steadily decreased across epochs
+### 📊 Performance Summary
+- Training accuracy: **~45% → ~70%**
+- Validation accuracy: **~68% peak**
+- Loss decreased consistently across epochs
 
 ### 📝 Notes
-- CIFAR-10 is challenging for small CNNs; 65–70% accuracy is expected.
-- Increasing depth or using data augmentation can push accuracy higher.
+- CIFAR-10 is difficult for shallow CNNs — 65–70% is normal.
+- Depth, augmentation, and regularization can improve accuracy.
