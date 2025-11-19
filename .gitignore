@@ -1,23 +1,24 @@
-cat > .gitignore <<'TXT'
-# Python
+# append recommended ignores
+cat >> .gitignore <<'EOF'
+# Virtual envs
+venv/
+venvsource/
+
+# Python caches
 __pycache__/
 *.pyc
-*.pyo
 
-# Large model/artifacts
-*.h5
+# Large ML artifacts
 *.keras
+*.h5
+*.pb
+models/
 *.ckpt
-*.pth
-training_history.png
-confusion_matrix.png
-sample_predictions.png
-mnist_cnn.h5
+
+# Plots / images (optional if you don't want images in repo)
+*.png
+*.jpg
 
 # macOS
 .DS_Store
-
-# Editors
-.vscode/
-.idea/
-TXT
+EOF
